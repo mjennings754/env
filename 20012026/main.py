@@ -6,3 +6,8 @@ print(low_num)
 # get the agent id from os module
 import os
 print(os.getpid())
+
+# create an immutable set
+frozenset([1, 2, 3])
+print(frozenset)
+
