@@ -15,8 +15,8 @@ print(f"{math.pi:.9f}")
 """
 Find e to the Nth Digit - Just like the previous problem, but with e instead of PI. Enter a number and have the program generate e up to that many decimal places. Keep a limit to how far the program will go.
 """
-e = int(input("Enter a number: "))
-print(f"{e:.{e}f}")
+# e = int(input("Enter a number: "))
+# print(f"{e:.{e}f}")
 
 """
 Fibonacci Sequence - Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
