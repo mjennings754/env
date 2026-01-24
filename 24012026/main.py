@@ -20,4 +20,3 @@ class Inventory():
         for product in self.products:
             total += product.value()
         return total
-
