@@ -10,3 +10,4 @@ itinerary_input = input("What are your plans? ")
 itinerary.append(itinerary_input.split(','))
 print(f'{destination} | {flight_date} | {airline} | {budget}')
 print(itinerary)
+
