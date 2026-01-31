@@ -23,7 +23,7 @@ for i in range(1, height + 1):
     spaces = " " * (height - i)
     blocks = "[x]" * i
     print(spaces + blocks)
-
+"""
 import random
 number = random.randint(1, 10)
 guess = int(input("What number am I thinking ?"))
@@ -35,3 +35,8 @@ while guess != number:
     guess = int(input("Try again: "))
 
 print("Correct!")
+"""
+
+numbers = ["4", "5", "3", "10", "12"]
+
+print(numbers[::-1])
