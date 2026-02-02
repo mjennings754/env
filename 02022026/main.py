@@ -27,3 +27,7 @@ print(number_thing)
 dictionary = {'hello':'こんにちは', 'thank you':'ありがとう', 'have a nice day':'良い１日を'}
 for english, japanese in dictionary.items():
     print(f"{english}:{japanese}")
+
+def capitalize(words, func):
+    for word in words:
+        print(func(word))
