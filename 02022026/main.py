@@ -31,3 +31,18 @@ for english, japanese in dictionary.items():
 def capitalize(words, func):
     for word in words:
         print(func(word))
+
+double = lambda x: x * 2
+add = lambda x, y: x + y
+print(double(2))
+print(add(4, 5))
+max_value = lambda x, y: x if x > y else y
+min_value = lambda x, y: x if x < y else y
+print(max_value(4, 5))
+print(min_value(8, 7))
+full_name = lambda first, last: first + " " + last
+print(full_name("Spongebob", "Squarepants"))
+
+is_even = lambda x: x % 2 == 0
+
+print(is_even(7))
