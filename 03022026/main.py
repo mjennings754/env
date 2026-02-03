@@ -42,6 +42,7 @@ for grade in passing_grades:
 
 # reduce(function, collection) - reduces elements in a collection to a single value
 
+from dataclasses import dataclass
 from functools import reduce
 
 def add(x, y):
@@ -77,3 +78,27 @@ def get_ice_cream(flavor):
     print(f"Here is your {flavor} ice cream [ ]")
 
 get_ice_cream("vanilla")
+
+# Data class - a special kind of class that's designed mostly for holding data without
+#              writing a lot of the boilerplater code for regular classes
+#              they automatically generate: __init__, __repr__, __eq__
+from dataclasses import dataclass, field
+@dataclass (frozen=True) # frozen makes it immutable
+class Person:
+    name: str
+    age: int
+    password: str = field(repr=False)
+    is_alive: bool = True
+
+    def __post_init__(self):
+        if self.age < 0:
+            raise ValueError("Age cannot be negative")
+
+person1 = Person("Spongebob", 40, "pineapple1")
+person2 = Person("Patrick", 35, "password")
+
+
+print(person1)
+print(person2)
+print(person1 == person2)
+
