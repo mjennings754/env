@@ -102,3 +102,17 @@ print(person1)
 print(person2)
 print(person1 == person2)
 
+# zip combines multiple iterables
+
+names = ["Spongebob", "Patrick", "Squidward"]
+ages = [30, 25, 50]
+jobs = ["Cook", "Unemployed", "Cashier"]
+
+data = list(zip(names, ages, jobs))
+
+print(data)
+#<zip object at 0x102a82480>
+
+for name, age, job in data:
+    print(f"{name} is {age} years old {job}")
+
