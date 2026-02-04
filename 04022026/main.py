@@ -7,3 +7,4 @@ shopping_list = []
 item = input("What item do you want to add? ")
 shopping_list.append(item)
 print(shopping_list)
+
