@@ -15,3 +15,26 @@ ZhenHen = Player("Zhen hen", True, "48", 99, False)
 
 print(ZhenHen.stats)
 print(vars(ZhenHen))
+
+class Parrot:
+    def __init__(self):
+        self._voltage = 10000
+
+    @property
+    def voltage(self):
+        return self._voltage
+
+p = Parrot()
+
+print(p.voltage)
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    # __repr__ returns a string containing a printable representation of an object
+    def __repr__(self):
+        return f"Person('{self.name}', {self.age})"
+    
+p = Person("Mitchell", 26)
+print(p)
