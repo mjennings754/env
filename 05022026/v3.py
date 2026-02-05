@@ -38,3 +38,6 @@ class Person:
     
 p = Person("Mitchell", 26)
 print(p)
+
+for item in zip([1, 2, 3], ['sugar', 'spice', 'everything nice']):
+    print(item)
