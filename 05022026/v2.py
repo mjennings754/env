@@ -33,3 +33,4 @@ class Player:
 Zezima = Player("Zezima", "330")
     
 print(Player.get_location())
+
