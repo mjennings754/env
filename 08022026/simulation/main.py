@@ -17,7 +17,7 @@ class Item:
             return True
         return False
     
-    def restock(self, amount):
+    def restock(self, amount):  
         self.quantity += amount
         print(f"Restocked {self.name} by {amount}. New stock {self.quantity}")
 
