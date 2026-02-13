@@ -193,3 +193,15 @@ mixed_list = [1, 2, 3, 'Jessa', 4, 5, 'Kelly', 'Jhon', 6]
 numbers_only = [item for item in mixed_list if isinstance(item, (int, float))]
 
 print(numbers_only)
+
+"""
+Exercise 15: Access Nested Lists
+
+Given a nested list, print the element '55'.
+"""
+
+nested_list = [[10, 20, 30], [44, 55, 66], [77, 87, 99]]
+
+element55 = nested_list[1][1]
+
+print(element55)
