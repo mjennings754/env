@@ -6,7 +6,7 @@ Practice Problem: Write a single-line list comprehension that takes a list of st
 
 words = ["apple", "bat", "cherry", "dog", "elderberry"]
 
-newlist = [w.upper() for w in words if len(w) >= 4]
+newlist = [char.upper() for char in words if len(char) >= 4]
 print(newlist)
 
 """
@@ -26,3 +26,19 @@ def merge_dicts(d1, d2):
     return result
 merged = merge_dicts(dict_a, dict_b)
 print(merged)
+
+"""
+Exercise 3: Frequency Map with Counter
+
+Practice Problem: Create a function that takes a string and returns a count of how many times each character appears. Ignore spaces and make it case-insensitive.
+"""
+from collections import Counter
+
+def count_char(text):
+    clean = text.lower().replace(" ", "")
+
+    return Counter(clean)
+
+text = "Python Programming"
+freq = count_char(text)
+print(freq)
