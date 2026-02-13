@@ -205,3 +205,51 @@ nested_list = [[10, 20, 30], [44, 55, 66], [77, 87, 99]]
 element55 = nested_list[1][1]
 
 print(element55)
+
+"""
+Exercise 16: Flatten Nested List
+
+Write a function to flatten a list of lists into a single, non-nested list. (e.g., [[1, 2], [3, 4]] becomes [1, 2, 3, 4]).
+"""
+list_of_lists = [[1, 2], [3, 4], [5, 6, 7]]
+
+def flatten_list(nested_list):
+    return [item for sublist in nested_list for item in sublist]
+
+result = flatten_list(list_of_lists)
+print(result)
+
+"""
+Exercise 17: Concatenate two lists index-wise
+
+Write a program to add two lists index-wise. Create a new list that contains the 0th index item from both the list, then the 1st index item, and so on till the last element. any leftover items will get added at the end of the new list.
+"""
+list1 = ["M", "na", "i", "Ke"] 
+list2 = ["y", "me", "s", "lly"]
+list3 = [i + j for i, j in zip(list1, list2)]
+print(list3)
+
+"""
+Exercise 18: Concatenate two lists in the following order
+
+Expected output:
+
+['Hello Dear', 'Hello Sir', 'take Dear', 'take Sir']
+
+"""
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+
+result = [x + y for x in list1 for y in list2]
+print(result)
+
+"""
+Exercise 19: Iterate both lists simultaneously
+
+Given a two Python list. Write a program to iterate both lists simultaneously and display items from list1 in original order and items from list2 in reverse order.
+"""
+list1 = [10, 20, 30, 40]
+list2 = [100, 200, 300, 400]
+
+for x, y in zip(list1, list2[::-1]):
+    print(x, y)
