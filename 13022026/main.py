@@ -168,3 +168,28 @@ Write a function that takes a list with duplicate elements and returns a new lis
 list_with_duplicates = [1, 2, 2, 3, 1, 4, 5, 4]
 unique_list = list(dict.fromkeys(list_with_duplicates))
 print(unique_list)
+
+"""
+Exercise 13: Remove all occurrences of a specific item from a list
+
+Given a Python list, write a program to remove all occurrences of item 20.
+"""
+
+list1 = [5, 20, 15, 20, 25, 50, 20]
+
+while 20 in list1:
+    list1.remove(20)
+print(list1)
+
+"""
+Exercise 14: List Comprehension for Numbers
+
+Use list comprehension to create a new list containing only the numbers from a given list.
+
+"""
+
+mixed_list = [1, 2, 3, 'Jessa', 4, 5, 'Kelly', 'Jhon', 6]
+
+numbers_only = [item for item in mixed_list if isinstance(item, (int, float))]
+
+print(numbers_only)
