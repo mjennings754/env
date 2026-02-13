@@ -80,3 +80,9 @@ list = [10, 20, 30, 40, 50]
 print(f"Sum: sum(list)")
 average = sum(list) / len(list)
 print("Average:", average)
+
+"""
+Exercise 4: Reverse a list
+"""
+list1 = [100, 200, 300, 400, 500]
+print(list1[::-1])
