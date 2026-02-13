@@ -8,7 +8,7 @@ print(list1)
 
 mixed = [1, 4, 5, 'Random', 6, 8, 'Random2', 4.5]
 
-numbers = [x for x in mixed if isinstance(x, (int))]
+numbers = [item for item in mixed if isinstance(item, (int))]
 print(numbers)
 
 nested = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -37,3 +37,9 @@ list1 = ["Hello ", "take "]
 list2 = ["Dear", "Sir"]
 res = [x + y for x in list1 for y in list2]
 print(res)
+
+list1 = ["a", "c"]
+list2 = ["b", "d"]
+res = [x + y for x in list1 for y in list2]
+print(res)
+
