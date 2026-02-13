@@ -17,11 +17,11 @@ list is not empty
 
 """
 
-list = [10, 20, 30, 40, 50]
-print(f"Initial list: {list}")
-print(f"Third item: {list[2]}")
-print(f"Lenth of the list: {len(list)}")
-if list is None:
+list22 = [10, 20, 30, 40, 50]
+print(f"Initial list: {list22}")
+print(f"Third item: {list22[2]}")
+print(f"Lenth of the list: {len(list22)}")
+if list22 is None:
     print("random")
 else:
     print("list is not empty")
@@ -50,17 +50,17 @@ List after removing 600 (by value): [10, 200, 300, 30, 40, 50]
 List after removing element at index 0: [200, 300, 30, 40, 50]
 """
 
-list = [10, 20, 30, 40, 50]
-list[1] = 200
-print(f"After changing second element: {list}")
-list.append(600)
-print(f"List after appending 600: {list}")
-list.insert(2, 300)
-print(f"List after inserting 300 at index 2: {list}")
-list.remove(600)
-print(f"List after removing 600 (by value): {list}")
-del list[0]
-print(f"List after removing element at index 0: {list}")
+list23 = [10, 20, 30, 40, 50]
+list23[1] = 200
+print(f"After changing second element: {list23}")
+list23.append(600)
+print(f"List after appending 600: {list23}")
+list23.insert(2, 300)
+print(f"List after inserting 300 at index 2: {list23}")
+list23.remove(600)
+print(f"List after removing 600 (by value): {list23}")
+del list23[0]
+print(f"List after removing element at index 0: {list23}")
 
 """
 Exercise 3: Sum and average of all numbers in a list
@@ -76,9 +76,9 @@ Sum: 150
 Average: 30.0
 """
 
-list = [10, 20, 30, 40, 50]
-print(f"Sum: sum(list)")
-average = sum(list) / len(list)
+list24 = [10, 20, 30, 40, 50]
+print(f"Sum: sum(list24)")
+average = sum(list24) / len(list24)
 print("Average:", average)
 
 """
@@ -135,9 +135,9 @@ Exercise 9: Create a copy of a list
 Create a copy of a list [10, 20, 30] and modify the copy. Print both the original and the copied list to demonstrate they are independent.
 """
 
-list = [10, 20, 30]
-copylist = list.copy()
-print(list)
+list11 = [10, 20, 30]
+copylist = list11.copy()
+print(list11)
 print(copylist)
 
 """
@@ -158,3 +158,13 @@ Exercise 11: Remove empty strings from the list of strings
 list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
 res = [x for x in list1 if x]
 print(res)
+
+"""
+Exercise 12: Remove Duplicates from list
+
+Write a function that takes a list with duplicate elements and returns a new list with only unique elements.
+"""
+
+list_with_duplicates = [1, 2, 2, 3, 1, 4, 5, 4]
+unique_list = list(dict.fromkeys(list_with_duplicates))
+print(unique_list)
