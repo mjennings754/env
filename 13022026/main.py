@@ -96,3 +96,65 @@ result = []
 for n in numbers:
     result.append(n * n)
 print(result)
+
+"""
+Exercise 6: Find Maximum and Minimum
+"""
+
+data = [8, 2, 15, 1, 9]
+
+min = min(data)
+print(min)
+max = max(data)
+print(max)
+
+"""
+Exercise 7: Count Occurrences
+
+Count and print how many times 'Football' appears in list.
+"""
+
+sports = ['Cricket', 'Football', 'Hockey', 'Football', 'Tennis']
+
+print(sports.count('Football'))
+
+"""
+Exercise 8: Sort a list of numbers
+Sort a given list of numbers in ascending order and print it.
+
+Given: numbers = [5, 2, 8, 1, 9]
+"""
+numbers = [5, 2, 8, 1, 9]
+numbers.sort()
+print(numbers)
+
+
+"""
+Exercise 9: Create a copy of a list
+
+Create a copy of a list [10, 20, 30] and modify the copy. Print both the original and the copied list to demonstrate they are independent.
+"""
+
+list = [10, 20, 30]
+copylist = list.copy()
+print(list)
+print(copylist)
+
+"""
+Exercise 10: Combine two lists
+
+Combine given two lists into a single list and print it.
+"""
+
+list_a = [1, 2]
+list_b = [3, 4]
+
+newlist = list_a + list_b
+print(newlist)
+
+"""
+Exercise 11: Remove empty strings from the list of strings
+"""
+list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+res = [x for x in list1 if x]
+print(res)
