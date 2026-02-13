@@ -86,3 +86,13 @@ Exercise 4: Reverse a list
 """
 list1 = [100, 200, 300, 400, 500]
 print(list1[::-1])
+
+"""
+Exercise 5: Turn every item of a list into its square
+"""
+numbers = [1, 2, 3, 4, 5, 6, 7]
+
+result = []
+for n in numbers:
+    result.append(n * n)
+print(result)
