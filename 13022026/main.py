@@ -61,3 +61,22 @@ list.remove(600)
 print(f"List after removing 600 (by value): {list}")
 del list[0]
 print(f"List after removing element at index 0: {list}")
+
+"""
+Exercise 3: Sum and average of all numbers in a list
+
+Calculate and print the sum and average of all numbers in a list.
+
+Given:
+
+my_list = [10, 20, 30, 40, 50]
+Expected Output:
+
+Sum: 150
+Average: 30.0
+"""
+
+list = [10, 20, 30, 40, 50]
+print(f"Sum: sum(list)")
+average = sum(list) / len(list)
+print("Average:", average)
