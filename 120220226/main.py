@@ -18,3 +18,4 @@ jobs = ["Cook", "Unemployed", "Cashier"]
 
 data = list(zip(names, ages, jobs))
 print(data)
+
