@@ -30,3 +30,17 @@ def take_input(name, age):
     print(name, age)
 
 take_input("William", 190)
+
+
+"""
+Exercise 2: Create a function with variable length of arguments
+
+Write a program to create a function func1() that accepts a variable number of arguments and prints each of their values.
+"""
+
+def func1(*args):
+    for arg in args:
+        print(arg)
+
+func1(10, 20, 20)
+func1(10, 20)
