@@ -43,3 +43,4 @@ list2 = ["b", "d"]
 res = [x + y for x in list1 for y in list2]
 print(res)
 
+
