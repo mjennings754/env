@@ -51,3 +51,15 @@ Calculate and print the sum and average of all numbers in a list.
 my_list = [10, 20, 30, 40, 50]
 print(sum(my_list))
 print(sum(my_list) / len(my_list))
+
+"""
+Given a list of numbers. write a program to turn every item of a list into its square.
+"""
+
+numbers = [1, 2, 3, 4, 5, 6, 7]
+
+res = []
+
+for n in numbers:
+    res.append(n * n)
+print(res)
