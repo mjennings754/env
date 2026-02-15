@@ -63,3 +63,12 @@ list2 = [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 7, 8, 9, 9,
 
 list3 = set(list2)
 print(list3)
+
+# remove number 5
+
+list2 = [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 6, 7, 7, 7, 8, 9, 9, 9, 10]
+
+while 5 in list2:
+    list2.remove(5)
+
+print(list2)
