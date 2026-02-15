@@ -63,3 +63,14 @@ res = []
 for n in numbers:
     res.append(n * n)
 print(res)
+
+"""
+Find and print the largest and smallest number in a list [8, 2, 15, 1, 9].
+"""
+
+data = [8, 2, 15, 1, 9]
+
+max = max(data)
+min = min(data)
+
+print(max, min)
