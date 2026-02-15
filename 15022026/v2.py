@@ -68,3 +68,10 @@ Slice below tuple to get elements from the 4th to the 7th position.
 numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 print(numbers[3:7])
+
+"""
+Exercise 4: Reverse the tuple
+"""
+tuple1 = (10, 20, 30, 40, 50)
+
+print(tuple1[::-1])
