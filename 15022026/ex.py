@@ -43,3 +43,15 @@ print(count)
 list1 = [1, 2, 3, "word", "word2", 94, 34.0]
 newlist = [item for item in list1 if isinstance(item, (int))]
 print(newlist)
+
+# check palindrome
+
+def check(x):
+    x = str(x)
+    reversed = x[::-1]
+    if reversed == x:
+        print("True")
+    else:
+        print("False")
+
+check(102)
