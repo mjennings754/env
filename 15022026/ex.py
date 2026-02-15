@@ -37,3 +37,9 @@ for char in word:
         count += 1
 
 print(count)
+
+# find all the integers in a list
+
+list1 = [1, 2, 3, "word", "word2", 94, 34.0]
+newlist = [item for item in list1 if isinstance(item, (int))]
+print(newlist)
