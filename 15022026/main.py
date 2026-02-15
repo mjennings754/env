@@ -141,3 +141,4 @@ for i in range(100):
     lottery.append(random.randrange(1000, 9999))
 winners = random.sample(lottery, 2)
 print(winners)
+
