@@ -30,3 +30,13 @@ set_a = set(list_a)
 set_b = set(list_b)
 common = set_a & set_b
 print(common)
+
+"""
+Exercise 14. Substring Frequency Analysis
+
+Practice Problem: Write a program to find how many times the substring “Emma” appears in a given string.
+"""
+
+str_x = "Emma is a good developer. Emma is a writer"
+count = str_x.count("Emma")
+print(count)
