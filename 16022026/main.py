@@ -104,3 +104,23 @@ for i in range(5, 0, -1):
         print("*", end=" ")
     print("\n")
 
+"""
+Exercise 1: Perform basic dictionary operations
+
+Perform following operations on given dictionary
+
+Add New Key-Value Pair: Add a new key-value pair, 'profession': 'Doctor', to the dictionary and print the updated dictionary.
+Modify Value: Change the value of the age key to 40 in the dictionary and print the updated dictionary.
+Access Key: Print the value associated with the city key.
+"""
+
+"""
+Exercise 4: Clear Dictionary
+
+Clear all key-value pairs from a given dictionary and print it.
+"""
+
+my_dict = {'name': 'Alice', 'age': 35, 'city': 'New York'}
+
+my_dict.clear()   
+print(my_dict)
