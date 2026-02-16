@@ -85,3 +85,14 @@ print(numbers)
 item1 = [1, 2, 3, "hello", 4, 5, 6]
 newlist1 = [item for item in item1 if isinstance(item, int)]
 print(newlist1)
+
+"""
+Exercise 20. Nested Loops for Multiplication Tables
+"""
+
+for i in range(1, 12):
+    for j in range(1, 12):
+        print(i * j, end="\t")
+    print("\n")
+
+    
