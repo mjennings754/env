@@ -81,3 +81,7 @@ Sort a given list of numbers in ascending order and print it.
 numbers = [5, 2, 8, 1, 9]
 numbers.sort()
 print(numbers)
+
+item1 = [1, 2, 3, "hello", 4, 5, 6]
+newlist1 = [item for item in item1 if isinstance(item, int)]
+print(newlist1)
