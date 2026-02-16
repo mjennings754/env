@@ -136,3 +136,18 @@ dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
 
 test = {**dict1}, {**dict2}
 print(test)   
+
+"""
+Exercise 6: Count Character Frequencies
+
+Given a string, create a dictionary where keys are characters and values are their frequencies in the string.
+"""
+
+def count_char(input_str):
+    frequency_dict = {}
+    for char in input_str:
+        frequency_dict[char] = frequency_dict.get(char, 0) + 1
+    return frequency_dict
+
+string1 = 'Jessa'
+print(count_char(string1))  
