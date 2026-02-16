@@ -95,4 +95,12 @@ for i in range(1, 12):
         print(i * j, end="\t")
     print("\n")
 
-    
+"""
+Exercise 21. Downward Half-Pyramid Pattern
+"""
+
+for i in range(5, 0, -1):
+    for j in range(0, i):
+        print("*", end=" ")
+    print("\n")
+
