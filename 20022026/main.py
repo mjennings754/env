@@ -14,3 +14,13 @@ for i in range(1, rows + 1, 1):
     for j in range(1, i + 1):
         print(j, end=" ")
     print("")
+
+"""
+Exercise 3: Calculate sum of all numbers from 1 to a given number
+"""
+s = 0
+n = int(input("Enter a number: "))
+for i in range(1, n + 1, 1):
+    s += i
+
+print(s)
