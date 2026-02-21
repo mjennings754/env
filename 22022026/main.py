@@ -2,23 +2,22 @@ test = lambda x: x * 2
 print(test(231232))
  
 
-def add_airpods(func):
+def purchase_game(func):
     def wrapper():
-        print("* You purchase Airpods")
+        print("* You purchased Borderlands 4")
         func()
     return wrapper
 
-def get_warranty(num):
+def game_library(games):
     def decorator(func):
-            def wrapper(*args, **kwargs):
-                print(f"* You purchase {num} months warrenty")
-                func(*args, **kwargs)
-            return wrapper
+        def wrapper():
+            print(f" * You have {games} games in your Steam Library")
+            func()
+        return wrapper
     return decorator
+@game_library(games="202")
+@purchase_game
+def create_steam_account():
+    print("You created a Steam account")
 
-@get_warranty(num=5)
-@add_airpods
-def get_iphone():
-    print("* You get the iPhone 17 Pro")
-
-get_iphone()
+create_steam_account()
