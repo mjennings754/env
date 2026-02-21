@@ -70,4 +70,10 @@ for i in range(10):
     print(i, prev)
     prev = i
 
-    
+# with the for loop keep track of the previous value but mulitply by 89
+
+prev = 0
+for i in range(10):
+    print(i, prev)
+    prev = i * 89
+
