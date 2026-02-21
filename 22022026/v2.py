@@ -25,3 +25,7 @@ print(list1)
 
 duplicate = lambda x: x * 2
 print(duplicate(2))
+
+# insert into the list at the fist index
+list1.insert(1, 10)
+print(list1)
