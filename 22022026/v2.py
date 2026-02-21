@@ -58,3 +58,16 @@ Apple = Apple()
 Apple2 = Macbook()
 print(Apple.processor())
 print(Apple2.processor())
+
+# generate a for loop
+for i in range(10):
+    print(i)
+
+# with the for loop keep track of the previous value
+print("_________________")
+prev = 0
+for i in range(10):
+    print(i, prev)
+    prev = i
+
+    
