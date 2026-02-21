@@ -43,3 +43,18 @@ def xmas_tree():
     print("You see a Christmas Tree")
 
 xmas_tree()
+
+# do multiple inheritance
+
+class Macbook:
+    def processor(self):
+        return "Macbook processor"
+    
+class Apple(Macbook):
+    def processor(self):
+        return "Apple processor"
+    
+Apple = Apple()
+Apple2 = Macbook()
+print(Apple.processor())
+print(Apple2.processor())
