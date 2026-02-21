@@ -20,3 +20,8 @@ print(list1)
 list1 = set(list1)
 list1 = list(list1)
 print(list1)
+
+# create a lambda to times itself by 2
+
+duplicate = lambda x: x * 2
+print(duplicate(2))
