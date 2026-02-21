@@ -77,3 +77,11 @@ for i in range(10):
     print(i, prev)
     prev = i * 89
 
+prev = 0
+count = 0
+for i in range(20):
+    print("________")
+    print(i, prev, count)
+    prev = i
+    count += 1
+    print(f"The number of loops: {count}")
