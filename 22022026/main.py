@@ -2,22 +2,23 @@ test = lambda x: x * 2
 print(test(231232))
  
 
-def add_sprinkles(func):
-    def wrapper(*args, **kwargs):
-        print("*You add sprinkles")
-        func(*args, **kwargs)
+def add_airpods(func):
+    def wrapper():
+        print("* You purchase Airpods")
+        func()
     return wrapper
 
-def add_fudge(func):
-    def wrapper(*args, **kwargs):
-        print("*You add fudge")
-        func(*args, **kwargs)
-    return wrapper
+def get_warranty(num):
+    def decorator(func):
+            def wrapper(*args, **kwargs):
+                print(f"* You purchase {num} months warrenty")
+                func(*args, **kwargs)
+            return wrapper
+    return decorator
 
-# base function
-@add_sprinkles
-@add_fudge
-def get_ice_cream(flavor):
-    print(f"Here is your {flavor} ice cream")
+@get_warranty(num=5)
+@add_airpods
+def get_iphone():
+    print("* You get the iPhone 17 Pro")
 
-get_ice_cream("chocolate")
+get_iphone()
