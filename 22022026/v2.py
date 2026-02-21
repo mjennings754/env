@@ -29,3 +29,17 @@ print(duplicate(2))
 # insert into the list at the fist index
 list1.insert(1, 10)
 print(list1)
+
+# create a simple decorator
+
+def add_lights(func):
+    def wrapper():
+        print("* You turn the lights on")
+        func()
+    return wrapper
+
+@add_lights
+def xmas_tree():
+    print("You see a Christmas Tree")
+
+xmas_tree()
