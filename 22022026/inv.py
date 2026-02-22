@@ -55,3 +55,14 @@ def do_something():
     This function does something...
     """
     pass
+
+# what is dunder?
+# double underscore __init__(self,.....)
+
+
+# how to manage data
+def large_dataset_generator(n):
+    for i in range(n):
+        yield i
+
+print(large_dataset_generator(100))
