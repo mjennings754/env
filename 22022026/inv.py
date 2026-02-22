@@ -26,3 +26,24 @@ try:
 except:
     with open('file.txt', 'w') as file:
         file.read
+
+# what are decorators?
+# with decorators, you can add functionality to an existing function without
+# having to create a new one
+
+def changecase(func):
+    def wrapper():
+        text = func()
+        if text:
+            for char in text:
+                print(char.upper(), end="")
+        else:
+            print("No text")
+    return wrapper
+
+
+@changecase
+def add_text():
+    return "Python is a high-level programming language"
+
+add_text()
