@@ -53,3 +53,7 @@ def purchase_iphone():
     print("You purchase an iPhone 17 Pro")
 
 purchase_iphone()
+
+# create a lambda function
+const = lambda x: x * 2
+print(const(22))
