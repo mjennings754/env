@@ -1,14 +1,30 @@
 # create an inventory system
 import random
+import json
+import os
 class Inventory():
-    def __init__(self):
+    def __init__(self, filename="inventory.json"):
         self.items = {}
+        self.filename = filename
+        self.load()
     # what if the item already exists?
     def add_item(self, item):
         if item in self.items:
             self.items[item] += 1
         else:
             self.items[item] = 1
+        self.save()
+
+    def save(self):
+        with open(self.filename, "w") as f:
+            json.dump(self.items, f)
+
+    def load(self):
+        if os.path.exists(self.filename):
+            with open(self.filename, "r") as f:
+                self.items = json.load(f)
+        else:
+            self.items = {}
 
     # model a purchase
 
@@ -16,6 +32,7 @@ class Inventory():
         if item in self.items:
             if self.items[item] > 0:
                 self.items[item] -= 1
+                self.save()
             else:
                 print("error")
 
@@ -30,6 +47,7 @@ class Inventory():
             self.items[random_item] += quantity
         else:
             self.items[random_item] = quantity
+        self.save()
 
     
 
