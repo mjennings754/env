@@ -57,3 +57,4 @@ purchase_iphone()
 # create a lambda function
 const = lambda x: x * 2
 print(const(22))
+
