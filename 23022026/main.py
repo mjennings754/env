@@ -16,8 +16,8 @@ class Inventory():
         self.save()
 
     def save(self):
-        with open(self.filename, "w") as f:
-            json.dump(self.items, f)
+        with open(self.filename, "w", encoding="utf-8") as f:
+            json.dump(self.items, f, ensure_ascii=False, indent=4)
 
     def load(self):
         if os.path.exists(self.filename):
