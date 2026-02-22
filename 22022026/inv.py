@@ -66,3 +66,9 @@ def large_dataset_generator(n):
         yield i
 
 print(large_dataset_generator(100))
+
+# how can you concatenate two lists?
+a = [1, 2, 3]
+b = [4, 5, 6]
+res = a + b
+print(res)
