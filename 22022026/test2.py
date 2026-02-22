@@ -12,8 +12,17 @@ class Inventory():
         else:
             self.items[item] = 1
 
+    def consume_item(self, item):
+        if item in self.items:
+            self.items[item] -= 1
+        else:
+            self.items[item] = 0
+
+
 inv = Inventory()
 inv.add_item("apple")
 inv.add_item("eggs")
+inv.add_item("eggs")
+inv.consume_item("eggs") # should remove the count
 inv.add_item("milk")
 print(inv.items)
