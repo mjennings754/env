@@ -47,3 +47,11 @@ def add_text():
     return "Python is a high-level programming language"
 
 add_text()
+
+# create a docstring
+
+def do_something():
+    """
+    This function does something...
+    """
+    pass
