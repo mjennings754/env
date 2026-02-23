@@ -12,3 +12,9 @@ test = Inventory()
 print(test)
 test.add_items("test")
 print(test.items)
+
+# create lambda
+
+testing = lambda x: x * 2
+
+print(testing(2))
