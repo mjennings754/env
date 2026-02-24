@@ -14,3 +14,17 @@ def create_osrs_account():
     print("You have created an OSRS account!")
 
 create_osrs_account()
+
+# create an inventory system
+
+class Inventory():
+    def __init__(self):
+        self.items = {}
+
+    def add_items(self, item):
+        self.items[item] = 1
+
+UQ = Inventory()
+print(UQ)
+UQ.add_items("Chino Pants")
+print(UQ.items)
