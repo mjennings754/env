@@ -34,3 +34,16 @@ print(UQ.items)
 for i in range(10):
     prev = i-1
     print(i, prev)
+
+"""
+Write python function which takes a variable number of arguments.
+"""
+def variable(*args):
+    return args
+
+print(variable("test", 2))
+
+# create a lambda function
+const = lambda x: x * x ** 2
+
+print(const(22))
