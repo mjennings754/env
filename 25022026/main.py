@@ -28,3 +28,9 @@ UQ = Inventory()
 print(UQ)
 UQ.add_items("Chino Pants")
 print(UQ.items)
+
+# create a for loop that shows the prev number
+
+for i in range(10):
+    prev = i-1
+    print(i, prev)
