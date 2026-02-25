@@ -24,6 +24,18 @@ def traverse(head):
         currentNode = currentNode.next
     print("null")
 
+def reverse(head):
+    prev = None
+    current = head
+
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+    return prev
+
+
 node1 = Node(8)
 node2 = Node(12)
 node3 = Node(2)
@@ -34,3 +46,5 @@ node2.next = node3
 node3.next = node4
 
 traverse(node1)
+reversed = reverse(node1)
+traverse(reversed)
