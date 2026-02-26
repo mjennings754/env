@@ -7,10 +7,17 @@ class Inventory():
 
     def __iter__(self):
         return iter(self.items)
+    
+    def test_add(self, *args):
+        for item in args:
+            self.items[item] = 1
+
 
 UQCA = Inventory()
 
 UQCA.add_hundred_items("testing")
 
-for items in UQCA:
-    print(items)
+UQCA.test_add("testing1", "testing2", "testing3")
+
+print(UQCA.items)
+
