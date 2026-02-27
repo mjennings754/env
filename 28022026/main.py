@@ -21,3 +21,8 @@ node2.next = node3
 node3.next = node4
 
 traverse(node1)
+
+# find how many chars in a word
+
+word = "supercalifragilisticexpialidocious"
+print(len(word))
