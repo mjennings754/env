@@ -26,3 +26,11 @@ traverse(node1)
 
 word = "supercalifragilisticexpialidocious"
 print(len(word))
+
+# find out how many times each char appears
+
+from collections import Counter
+
+char_count = Counter(word)
+for char, count in char_count.items():
+    print(f"{char}: {count}")
