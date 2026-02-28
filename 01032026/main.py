@@ -30,3 +30,18 @@ dict_b = {'b': 5, 'c': 15}
 
 merged = merge(dict_a, dict_b)
 print(merged)
+
+"""
+Exercise 3: Frequency Map with Counter
+
+Practice Problem: Create a function that takes a string and returns a count of how many times each character appears. Ignore spaces and make it case-insensitive.
+"""
+from collections import Counter
+def get_count(x):
+    clean_str = x.lower().replace(" ", "")
+
+    return Counter(clean_str)
+        
+text = "Python Programming"
+freq = get_count(text)
+print(freq)
