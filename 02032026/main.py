@@ -16,3 +16,15 @@ def sort(x):
 
 sort(list1)
 print(list1)
+
+# check if palindrome
+
+def check_palindrome(str1):
+    original = str1
+    new = str(str1)
+    if original == new:
+        print("True")
+    else:
+        print("False")
+
+check_palindrome("A man a plan a canal Panama")
