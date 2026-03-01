@@ -28,3 +28,42 @@ def check_palindrome(str1):
         print("False")
 
 check_palindrome("A man a plan a canal Panama")
+
+# create a password strength function
+
+def check_password_strength(password):
+    length_ok = False
+    has_uppercase = False
+    has_lowercase = False
+    has_number = False
+    has_special = False
+
+    if len(password) >= 8:
+        length_ok = True
+
+    for char in password:
+        if char.isupper():
+            has_uppercase = True
+        elif char.islower():
+            has_lowercase = True
+        elif char.isdigit():
+            has_number = True
+
+        elif not char.isalnum():
+            has_special = True
+
+    if length_ok and has_uppercase and has_lowercase and has_number and has_special:
+        return "Strong"
+    elif length_ok and (has_uppercase or has_lowercase) and has_number:
+        return "Medium"
+    else:
+        return "Weak"
+    
+
+password1 = "1Pass#"
+password2 = "P@assw0Rd001"
+password3 = "Password1"
+
+print(f"'{password1}': {check_password_strength(password1)}")
+print(f"'{password2}': {check_password_strength(password2)}")
+print(f"'{password3}': {check_password_strength(password3)}")
