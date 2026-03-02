@@ -12,3 +12,9 @@ r = float(input("Enter the radius: "))
 area = pi * r ** 2
 
 print(area)
+
+# reverse a full name from input
+first = input("Enter your first name: ")
+last = input("Enter your last name: ")
+reversed = (f"{first[::-1]} {last[::-1]}")
+print(reversed)
