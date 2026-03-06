@@ -14,3 +14,13 @@ def is_palindrome(x):
         print(False)
 
 is_palindrome(121)
+
+"""
+Exercise 8: List Comprehension Filtering (Advanced)
+
+Practice Problem: Given a list of strings, use a single list comprehension to extract strings that meet two criteria: they must be longer than 5 characters AND they must start with a vowel (a, e, i, o, u).
+"""
+vowels = 'aeiou'
+list1 = ["apple", "education", "ice", "ocean", "python", "umbrella"]
+newlist1 = [word for word in list1 if len(word) > 5 and word[0].lower() in vowels]
+print(newlist1)
