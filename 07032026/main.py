@@ -24,3 +24,19 @@ vowels = 'aeiou'
 list1 = ["apple", "education", "ice", "ocean", "python", "umbrella"]
 newlist1 = [word for word in list1 if len(word) > 5 and word[0].lower() in vowels]
 print(newlist1)
+
+"""
+Exercise 9: Remove Duplicates (Preserving Order)
+"""
+def remove_duplicates(items):
+    seen = set()
+    res = []
+
+    for x in items:
+        if x not in seen:
+            res.append(x)
+            seen.add(x)
+    return res
+
+nums = [1, 2, 2, 3, 1, 4, 2]
+print(remove_duplicates(nums))
