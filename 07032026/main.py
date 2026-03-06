@@ -65,3 +65,22 @@ def merge(dict1, dict2):
 d1 = {"a": 1, "b": 2}
 d2 = {"b": 3, "c": 4}
 print(merge(d1, d2))
+
+
+"""
+Exercise 12: Inverted Index
+
+Practice Problem: Create a function that “inverts” a dictionary. Convert a dictionary of Author: [List of Books] into a dictionary of Book: Author.
+"""
+def invert_dict(data):
+    inverted = {}
+    for author, books in data.items():
+        for book in books:
+            inverted[book] = author
+    return inverted
+
+authors = {
+    "Orwell": ["1984", "Animal Farm"],
+    "Huxley": ["Brave New World"]
+}
+print(invert_dict(authors))
