@@ -40,3 +40,28 @@ def remove_duplicates(items):
 
 nums = [1, 2, 2, 3, 1, 4, 2]
 print(remove_duplicates(nums))
+
+"""
+Exercise 11: Dictionary Merging (Value Grouping)
+
+Practice Problem: Merge two dictionaries. If they share a key, the new dictionary should store a list containing values from both dictionaries instead of overwriting the first one.
+"""
+
+def merge(dict1, dict2):
+    combined = {}
+
+    all_keys = set(dict1.keys()) | set(dict2.keys())
+
+    for key in all_keys:
+        values = []
+        if key in dict1:
+            values.append(dict1[key])
+        if key in dict2:
+            values.append(dict2[key])
+        combined[key] = values
+
+    return combined
+
+d1 = {"a": 1, "b": 2}
+d2 = {"b": 3, "c": 4}
+print(merge(d1, d2))
