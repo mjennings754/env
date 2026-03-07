@@ -70,3 +70,17 @@ def outer(a, b):
 res = outer(5, 10)
 print(res)
     
+"""
+Exercise 9: Find the largest item from list
+"""
+x = [4, 6, 8, 24, 12, 2]
+print(max(x))
+
+"""
+Exercise 14: Create a lambda function that squares a given number
+"""
+square = lambda x: x**2
+
+number = 5
+squared_number = square(number)
+print(f"The square of {number} is {squared_number}")
