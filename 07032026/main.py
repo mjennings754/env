@@ -102,3 +102,24 @@ for char in superstr:
     count += 1
     print(char, count)
 
+"""
+Exercise 18: Countdown Timer (Time Delta)
+
+Practice Problem: Write a function that calculates the exact number of days, hours, and minutes remaining until the upcoming New Year’s Day.
+"""
+from datetime import datetime
+def countdown():
+    now = datetime.now()
+
+    next_year = now.year + 1
+    target = datetime(next_year, 1, 1)
+
+    diff = target - now
+
+    days = diff.days
+
+    hours, remainder = divmod(diff.seconds, 3600)
+    minutes, _ = divmod(remainder, 60)
+
+    return f"{days} days, {hours} hours, {minutes} minutes"
+print(f"Time remaining: {countdown()} until New Year!")
