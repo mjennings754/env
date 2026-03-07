@@ -93,3 +93,12 @@ employees = [{"name": "A", "salary": 50}, {"name": "B", "salary": 70}, {"name": 
 sorted_employees = sorted(employees, key=lambda x:x['salary'], reverse=True)
 for emp in sorted_employees:
     print(emp)
+
+# funcode
+
+superstr = "supercalifragilisticexpialidocious"
+count = 0
+for char in superstr:
+    count += 1
+    print(char, count)
+
