@@ -21,3 +21,16 @@ values = [10, 20, 30]
 
 res = dict(zip(keys, values))
 print(res)
+
+"""
+Exercise 6: Count Character Frequencies
+"""
+string1 = 'Jessica'
+
+def count_char(input):
+    freq = {}
+    for char in input:
+        freq[char] = freq.get(char, 0) + 1
+    return freq
+
+print(count_char(string1))
