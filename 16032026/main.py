@@ -11,3 +11,13 @@ Exercise 17: Use a lambda with the sorted() function to sort a list of tuples ba
 data = [('apple', 5), ('banana', 2), ('cherry', 8), ('date', 1)]
 sorted = sorted(data, key=lambda item: item[1])
 print(sorted)
+
+"""
+Exercise 3: Dictionary from Lists
+"""
+
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+
+res = dict(zip(keys, values))
+print(res)
